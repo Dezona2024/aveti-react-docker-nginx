@@ -19,7 +19,7 @@ RUN npm run build
 
 # Stage 2
 # Copy the react app build above in nginx
-FROM nginx:alpine
+FROM nginx:1.27.2-alpine3.20
 
 # Set working directory to nginx asset directory
 WORKDIR /usr/share/nginx/html
